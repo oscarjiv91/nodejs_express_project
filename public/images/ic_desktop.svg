@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="218px" height="218px" viewBox="0 0 218 218" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="31" y="53" width="150" height="88" rx="8"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="150" height="88" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <path d="M79.1674222,137 L132.167422,137 L135.728329,151.243623 C136.799261,155.527352 134.084615,159 129.661343,159 L81.173503,159 C76.7518666,159 74.1115226,155.538299 75.2743609,151.274558 L79.1674222,137 Z" id="path-3"></path>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="60.9618017" height="22" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(3.000000, 3.000000)" stroke="#FFFFFF">
+            <path d="M59.6374963,201.350002 C70.9828762,206.876808 83.4617732,210.438345 96.6312234,211.59165 C99.71811,211.861982 102.842937,212 106,212 C164.542183,212 212,164.542183 212,106 C212,47.4578165 164.542183,0 106,0 C47.4578165,0 0,47.4578165 0,106 C0,147.91628 24.3296231,184.150072 59.6374963,201.350002 Z" id="Oval-Copy" stroke-width="5"></path>
+            <use id="Rectangle-Copy" mask="url(#mask-2)" stroke-width="10" xlink:href="#path-1"></use>
+            <path d="M36.5,120.5 L177.5,120.5" id="Line-Copy" stroke-width="5" stroke-linecap="square"></path>
+            <use id="Rectangle-2" mask="url(#mask-4)" stroke-width="10" xlink:href="#path-3"></use>
+        </g>
+    </g>
+</svg>

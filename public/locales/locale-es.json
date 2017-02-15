@@ -1,0 +1,23 @@
+{
+    "index.services": "Nuestros servicios",
+    "index.contact": "Contáctanos",
+    "index.quote": "No se trata de las ideas. Se trata de hacer que las ideas ocurran.",
+
+    "menu.welcome": "Bienvenido",
+    "menu.about": "Nuestros servicios",
+    "menu.contact": "Contáctanos",
+
+    "services.mobile": "Desarrollo de aplicaciones móviles",
+    "services.web": "Desarrollo de aplicaciones web",
+    "services.design": "Diseños Profesionales",
+    "services.ecommerce": "Soluciones Ecommerce",
+
+    "label.name": "Nombre",
+    "label.email": "Email",
+    "label.message": "Mensaje",
+    "button.submit": "ENVIAR",
+
+    "alert.error": "Lo sentimos, algo salió mal. Por favor, inténtelo de nuevo",
+    "alert.success": "Gracias por contactarnos. Nos comunicaremos lo antes posible!",
+    "alert.form-invalid": "Por favor, llene el formulario con datos válidos"
+}

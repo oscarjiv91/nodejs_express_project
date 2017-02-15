@@ -1,0 +1,23 @@
+{
+    "index.services": "Our services",
+    "index.contact": "Contact Us",
+    "index.quote": "It’s not about ideas. It’s about making ideas happen.",
+
+    "menu.welcome": "Welcome",
+    "menu.about": "Our Services",
+    "menu.contact": "Contact Us",
+
+    "services.mobile": "Mobile Apps Development",
+    "services.web": "Web Apps Development",
+    "services.design": "Professional Design",
+    "services.ecommerce": "Ecommerce Solutions",
+
+    "label.name": "Name",
+    "label.email": "Email",
+    "label.message": "Message",
+    "button.submit": "SEND",
+
+    "alert.error": "Sorry, something went wrong. Please, try it again",
+    "alert.success": "Thanks for contacting us. We'll get back to you shortly!",
+    "alert.form-invalid": "Please, fill the form with valid data"
+}

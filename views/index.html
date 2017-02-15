@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Apps Boulevard</title>
+	<meta name="author" content="Oscar J. Irún" />
+	<meta name="description" content="fullPage full-screen backgrounds." />
+	<meta name="keywords"  content="development,apps,websites,ecommerce,design,ios,iphone,android,development-company" />
+	<meta name="Resource-type" content="Document" />
+	<meta name="viewport" content="width=device-width" />
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+	<link rel="stylesheet" type="text/css" href="/stylesheets/side-menu.css" />
+	<link rel="stylesheet" type="text/css" href="/stylesheets/sections.css" />
+	<link rel="stylesheet" type="text/css" href="/stylesheets/animate.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="/javascripts/jquery.fullPage.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/angular-ui-router@0.3.1/release/angular-ui-router.js"></script>
+	<script type="text/javascript" src="/javascripts/controller.js"></script>
+	<script type="text/javascript" src="/javascripts/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/javascripts/bootstrap-notify.js"></script>
+	<script src="/scripts/tmhDynamicLocale.js"></script>
+	<script src="/scripts/angular-cookies.js"></script>
+	<script src="/scripts/angular-translate.js"></script>
+	<script src="/scripts/angular-translate-loader-static-files.js"></script>
+	<script src="/scripts/angular-translate-loader-url.js"></script>
+	<script src="/scripts/angular-translate-storage-local.js"></script>
+	<script src="/scripts/angular-translate-storage-cookie.js"></script>
+	<script src="/scripts/angular-translate-handler-log.js"></script>
+	<script src="/scripts/angular-locale_en.js"></script>
+	<script src="/scripts/angular-locale_es.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// $('#fullpage').fullpage({
+			// 	css3: false,
+      //   scrollingSpeed: 700,
+      //   fitToSection: false,
+      //   fitToSectionDelay: 1000,
+      //   scrollBar: false,
+			// 	autoScrolling: false
+			// });
+
+			$('#language-button').popover({
+				template: '<div style="position: fixed" class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"><ul><li><a href="#">asdf</a></li><li><a href="#">fsda</a></li><li><a href="#">fsda</a></li><li><a href="#">fsda</a></li><li><a href="#">fsda</a></li><li><a href="#">fsda</a></li><li><a href="#">fsda</a></li><li><a href="#">fsda</a></li><li><a href="#">fsda</a></li></ul></div></div>'
+			})
+		});
+
+	</script>
+
+</head>
+<body ng-controller="MainController" ng-click="closeLanguages()">
+
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" ng-click="closeNav()">&times;</a>
+		<table id="services-list">
+			<tr></tr>
+			<tr>
+				<td><a ng-click="closeNav(1)" href="#" translate="menu.welcome"></a></td>
+			</tr>
+			<tr>
+				<td>
+					<a ng-click="closeNav(2)" href="#" translate="menu.about"></a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a ng-click="closeNav(3)" href="#" translate="menu.contact"></a>
+				</td>
+			</tr>
+			<tr></tr>
+			<tr></tr>
+		</table>
+	</div>
+
+	<div id="menuLanguages" class="languages-menu">
+	  <a href="javascript:void(0)" class="closebtn" ng-click="closeLanguages()">&times;</a>
+		<table id="services-list">
+			<tr></tr>
+			<tr ng-repeat="lang in languages">
+				<td><a ng-click="closeLanguages(lang)" href="#"> { %lang }</a></td>
+			</tr>
+			<!-- <tr>
+				<td><a ng-click="closeLanguages(1)" href="#">Spanish</a></td>
+			</tr>
+			<tr>
+				<td>
+					<a ng-click="closeLanguages(2)" href="#">English</a>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<a ng-click="closeLanguages(3)" href="#">German</a>
+				</td>
+			</tr> -->
+			<tr></tr>
+			<tr></tr>
+		</table>
+	</div>
+
+
+
+<div id="fullpage" style="position: absolute; height: 100%; width: 100%">
+
+	<div class="section" id="section-1" style="display: block; height: 100%">
+		<!-- <img class="" src="images/logo.png"></img> -->
+		<table id="wrapper">
+			<tr>
+         <td id="first-row"></td>
+      </tr>
+      <tr>
+         <td id="second-row"><img src="images/logo.png" alt="" class="fadein"/></td>
+      </tr>
+			<tr>
+				 <td id="third-row" class="fadein">
+					 <i translate="index.quote"></i>
+					 <p>- Scott Belsky</p>
+				 </td>
+			</tr>
+   </table>
+	</div>
+
+	<div class="section" id="section-2" style="height: 100%; display: block">
+		<table id="services-list">
+			<tr></tr>
+			<tr>
+				<td>
+						<div class="header">
+							<h1 translage="index.services"></h1>
+						</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="images/ic_mobile.svg"/>
+					<div translate="services.mobile"></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="images/ic_desktop.svg"/>
+					<div translate="services.web"></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="images/ic_design.svg"/>
+					<div translate="services.design"></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<img src="images/ic_ecommerce.svg"/>
+					<div translate="services.ecommerce"></div>
+				</td>
+			</tr>
+			<tr></tr>
+			<tr></tr>
+		</table>
+	</div>
+	<div class="section" id="section-3" style="display: table">
+
+		<table class="text-center contact-page" style="    top: 0;
+		    display: table;
+		    padding-top: 0px;
+				width: 100%;
+		    vertical-align: middle;">
+			<tr style="height: 4em"></tr>
+			<tr style="height: 4em">
+				<td>
+					<div class="header">
+						<h1 translate="index.contact"></h1>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="contact-form">
+						<div>
+							<div class="col-xs-offset-2 col-xs-8  col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6">
+								<form name="form" novalidate ng-submit="send(user.name, user.email, user.message)" class="form">
+									<div class="form-group">
+										<label for="exampleInputEmail1" translate="label.name"></label>
+										<span ng-show="form.name.$touched && form.name.$invalid" class="form-error">Your name is required.</span>
+										<input type="text" class="" id="inputName" ng-model="user.name" name="name" required>
+									</div>
+									<div class="form-group">
+										<label for="exampleInputEmail1" translate="label.email"></label>
+										<span ng-show="form.email.$touched && form.email.$invalid" class="form-error">Insert a valid email.</span>
+										<input type="email" class="" id="inputEmail" ng-model="user.email" name="email" required>
+									</div>
+									<div class="form-group">
+										<label for="exampleInputPassword1" translate="label.message"></label>
+										<span ng-show="form.message.$touched && form.message.$invalid" class="form-error">Can not be empty</span>
+										<textarea type="text" class="" id="inputMessage" ng-model="user.message" name="message" required></textarea>
+									</div>
+									<button type="submit" id="submit-button" class="btn btn-default" translate="button.submit"></button>
+							</form>
+							<div id="social" class="text-center">
+								<a target="_blank" href="https://twitter.com/appsboulevard">Twitter</a> •
+								<a target="_blank" href="https://facebook.com/AppsBoulevard">Facebook</a>
+							</div>
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr></tr>
+			<tr></tr>
+			<tr></tr>
+		</table>
+	</div>
+</div>
+
+<a id="menu-button" ng-click="openNav()"></a>
+
+<div id="languages">
+	<div id="accordion" style="display:none; position: relative;">
+		<ul ng-repeat="lang in languages">
+			<li><a ng-click="closeLanguages(lang)" href="#" ng-bind="lang"></a></li>
+		</ul>
+	</div>
+	<a id="language-button" data-toggle="popover" ng-click="openLanguages()" ng-bind="selectedLanguage"></a>
+<!-- <a id="language-button" data-placement="left" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">{{selectedLanguage}}</a> -->
+</div>
+</body>
+
+<div ng-show="isLoading" class="overlay">
+	<div class="sk-circle">
+	  <div class="sk-circle1 sk-child"></div>
+	  <div class="sk-circle2 sk-child"></div>
+	  <div class="sk-circle3 sk-child"></div>
+	  <div class="sk-circle4 sk-child"></div>
+	  <div class="sk-circle5 sk-child"></div>
+	  <div class="sk-circle6 sk-child"></div>
+	  <div class="sk-circle7 sk-child"></div>
+	  <div class="sk-circle8 sk-child"></div>
+	  <div class="sk-circle9 sk-child"></div>
+	  <div class="sk-circle10 sk-child"></div>
+	  <div class="sk-circle11 sk-child"></div>
+	  <div class="sk-circle12 sk-child"></div>
+	</div>
+</div>
+
+</html>

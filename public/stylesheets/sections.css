@@ -1,0 +1,18 @@
+#section-1{
+  background: -webkit-gradient(linear, top left, bottom left, from(#43C5BE), to(#21938D));
+  background: -webkit-linear-gradient(#43C5BE, #21938D);
+  background: linear-gradient(#43C5BE,#21938D);
+}
+
+#section-2{
+  background: -webkit-gradient(linear, top left, bottom left, from(#21938D), to(#3BB4D9));
+  background: -webkit-linear-gradient(#21938D, #3BB4D9);
+  background: linear-gradient(#21938D,#3BB4D9);
+}
+
+#section-3{
+  background: -webkit-gradient(linear, top left, bottom left, from(#3BB4D9), to(#527594));
+  background: -webkit-linear-gradient(#3BB4D9, #527594);
+  background: linear-gradient(#3BB4D9,#527594);
+  position: relative;
+}
